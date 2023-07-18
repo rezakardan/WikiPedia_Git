@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/black"
+    android:orientation="vertical"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <com.google.android.material.appbar.AppBarLayout
+          android:id="@+id/appbarmain"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+<com.google.android.material.appbar.CollapsingToolbarLayout
+app:title="WikiPedia"
+    android:id="@+id/collapsemain"
+    android:theme="@style/Theme.MaterialComponents"
+    app:contentScrim="?attr/colorPrimary"
+app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image_main2"
+        app:layout_collapseMode="parallax"
+        android:adjustViewBounds="true"
+        android:src="@drawable/test_nature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        app:layout_collapseMode="pin"
+              android:id="@+id/toolbarmain2"
+              android:layout_width="match_parent"
+              android:layout_height="56dp"/>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+      </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.core.widget.NestedScrollView
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:textSize="25sp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/job_jamiro_main2"
+        android:text="British acid jazz band"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/inform_jamiro_main2"
+        android:text="British acid jazz band"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/matne_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="8dp"
+
+        android:text="Jamiroquai (/dʒəˈmɪrəkwaɪ/ (listen)) are an English funk and acid jazz band from London. Formed in 1992, they are fronted by vocalist Jay Kay, and were prominent in the London-based funk and acid jazz movement of the 1990s. They built on their acid jazz sound in their early releases and later drew from rock, disco, electronic and Latin music genres. Lyrically, the group has addressed social and environmental justice. Kay has remained as the only original member through several line-up changes.
+
+The band made their debut under Acid Jazz Records, but subsequently found mainstream success under Sony. While under this label, three of their albums have charted at number one in the UK, including Emergency on Planet Earth (1993), Synkronized (1999) and A Funk Odyssey (2001). The band's 1998 single, Deeper Underground, was also number one in their native country.
+
+As of 2017, Jamiroquai had sold more than 26 million albums worldwide. Their third album, Travelling Without Moving (1996), received a Guinness World Record as the best-selling funk album in history. The music video for its lead single, Virtual Insanity, also contributed to the band's success. The song was named Video of the Year at the 1997 MTV Video Music Awards and earned the band a Grammy Award in 1998."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fabmain"
+          app:layout_anchor="@id/appbarmain"
+          app:layout_anchorGravity="bottom|end"
+          android:layout_marginEnd="10dp"
+          android:src="@drawable/ic__wikipedia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

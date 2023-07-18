@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_margin="5dp"
+    android:clickable="true"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/black"
+    app:contentPadding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+
+
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textname_john"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Madden"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textadad" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:padding="5dp"
+        android:id="@+id/textjobinform_john"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="American Football Coach and Commentator (1936_2021)"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textname_john"
+        app:layout_constraintTop_toBottomOf="@+id/textname_john" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textlikecounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="+280 k"
+        android:textColor="@color/Green"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textjobinform_john" />
+
+    <TextView
+        android:id="@+id/textadad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/blue"
+android:background="@drawable/shape_adad"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+       android:src="@drawable/jamiroquai"
+        android:id="@+id/imageurl_john"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
